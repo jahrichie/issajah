@@ -1,9 +1,13 @@
 #homepage
 	.top-nav.fixed
 		ul
-			li Intro
-			li Current work
-			li Silly side projects
+			li
+				a href='#' data-jump-to="top" Intro
+			li
+				a href='#' data-jump-to="current_work"  Current work
+			li
+				a href='#' data-jump-to="silly_projects" Silly side projects
+
 
 	.go-blue.fold-height
 		.grid-container.centered
@@ -19,7 +23,7 @@
 				span Unicorn
 			.message.grid-container.centered.row
 				span.blurb.centered
-					| Hi I'm Rich, but everyone  calls me Jahrichie. I'm an award winning software engineer and product brian who believes that if you make pretty things, that are easy to use, people will convert. I'm passionate about agile test driven development, a balanced team, user centered design, and i'm not afraid to let you know about it.  I pride myself on taking super complicated multilayer projects, dead simple agile production applications. Holler at  <a href="mailto:richardjosephoreilly@gmail.com"> me </a>
+					| Hi I'm Rich, but everyone  calls me Jahrichie. I'm an award winning software engineer and product brian who believes that if you make pretty things, that are easy to use, people will convert. I'm passionate about agile test driven development, a balanced team, user centered design, and i'm not afraid to let you know about it.  I pride myself on taking super complicated multilayer projects, dead simple agile production applications. Holler at  <a class='nav-trigger' href="mailto:richardjosephoreilly@gmail.com"> me </a>
 hr
 	#current-work
 
@@ -55,31 +59,11 @@ hr
 		hr
 		#sillyprojects
 			h1 Silly side projects
-			p Coming soon
+			p Coming soon. I have to clean up some old heroku nodes before I add this section of aprox 20 projects.
 
 
 		hr
 		.goodbye
 			i.fas.fa-hand-scissors &nbsp
 
-javascript:
-	$(function(){
-
-		var waypoint = new Waypoint({
-		  element: document.getElementById('current-work'),
-		  handler: function(direction) {
-				if(direction == "down"){
-					console.log('Scrolled to waypoint!', direction)
-					$(".top-nav").fadeIn()
-				} else {
-					console.log('Scrolled to waypoint!', direction)
-					$(".top-nav").fadeOut()
-				}
-
-
-		  }
-		})
-
-
-
-	});
+=  javascript_include_tag 'homepage' 

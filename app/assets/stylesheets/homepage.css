@@ -109,6 +109,10 @@ span.cb-native-blurb {
 	padding: 25px;
 }
 
+.top-nav  ul li a{
+	color: white;
+}
+
 #animated-logo {
 	display: none;
 }
