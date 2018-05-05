@@ -1,0 +1,32 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #78BFEB;
+
+}
+
+.centered {
+	text-align: center;
+}
+
+.go-blue {
+	background: #78BFEB;
+	padding:50px 0;
+}
+
+.open-sans,h1,h2,h3,h4,p  {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+	font-family: 'Press Start 2P', cursive;
+}
+
+.thumb {
+	/*display: inline;*/
+}
+
+.size-21 {font-size: 21px;}
+
+.fixed {
+	position: fixed;
+}

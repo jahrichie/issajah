@@ -1,0 +1,126 @@
+#homepage
+	.top-nav.fixed
+		ul
+			li Intro
+			li Current work
+			li Some Funny Sides
+
+	.go-blue.fold-height
+		.grid-container.centered
+		 	= image_tag  "logo", class: "logo-face", id: "still-logo"
+			br
+			= image_tag  "logo", class: "spin-me", id: "animated-logo"
+
+			h1.name Richard O'Reilly
+			#qualities
+				span Application Developer & Dev Op.
+				span Product Designer
+				span Agile Team lead
+				span Unicorn
+			.message.grid-container.centered.row
+				span.blurb.centered
+					| Hi I'm Rich, but everyone  calls me Jahrichie. I'm an award winning software engineer and product brian who believes that if you make pretty things, that are easy to use, people will convert. I'm passionate about agile test driven development, a balanced team, user centered design, and i'm not afraid to let you know about it.  I pride myself on taking super complicated multilayer projects, dead simple agile production applications. Holler at  <a href="mailto:richardjosephoreilly@gmail.com"> me </a>
+hr
+	#current-work
+
+		.current-work.grid-container
+			h3.section-header.size-21.centered Current Work
+			.site
+				span.thumb
+					.row
+
+						.columns.large-6.centered
+							= image_tag "cb-screenshot.png"
+						.columns.large-6.centered
+
+							span.blurb-cb
+								b 2012-Present
+								br
+								| I currently serve as VP Of Engineering for the Charitynetwork.com, the parent company of Charitybuzz.com & Prizeo.com, and the leader in online fundraising.  Since joining I've worked on improving legacy technologies, while coninuing to innovate everyday. My focus is quite clear, use my expertise in technology  and process to raise more money's for Charity. To date we've raised over 200+ million since inception. <br><br><b>Webby Award "Peoples Choice" 2018 & Fast Companies "Most Innovative Companies"
+		br
+		br
+		.grid-container.centered
+			.site
+			.row
+				.large-6.columns
+					span.cb-native-blurb
+						b iOS, Steady Killing it.
+						br
+						| iOS is a major part of Charitybuzz's Native & Mobile Strajedy. We've been lucky enough to be featured in the app store several times, and were even apart of the Apple Watch Labs, where only a few lucky apps were chosen to write software for the launch of the Apple Watch on premise @ Apple.
+				.large-6.columns
+						span.thumb
+							= image_tag "ios", class: 'thumb'
+
+	.grid-container.centered
+		hr
+		#sillyprojects
+			h1 Silly projects
+			.row
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b NFL Arrest API
+
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b Kanyne Twitter
+
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b Onus App
+
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b Trump Net
+
+			.row
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b Jahs Jets
+
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b Bad Landlord
+
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b Thing
+
+				.large-3.columns.silly-project.centered
+					= image_tag "https://dummyimage.com/150/#fbf8a/0fbf8a.png&text=Demo"
+					div.silly-blurb
+						b thing
+
+
+
+		hr
+		.goodbye
+			i.fas.fa-hand-scissors &nbsp
+
+javascript:
+	$(function(){
+
+		var waypoint = new Waypoint({
+		  element: document.getElementById('current-work'),
+		  handler: function(direction) {
+				if(direction == "down"){
+					console.log('Scrolled to waypoint!', direction)
+					$(".top-nav").fadeIn()
+				} else {
+					console.log('Scrolled to waypoint!', direction)
+					$(".top-nav").fadeOut()
+				}
+
+
+		  }
+		})
+
+
+
+	});
