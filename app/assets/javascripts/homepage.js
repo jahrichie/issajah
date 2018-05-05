@@ -10,8 +10,6 @@ $(function(){
 
   $(".top-nav ul li a").click(function() {
     event.preventDefault();
-    // alert( "Handler for .click() called." );
-    alert( $(this).data("jump-to")  )
     var jump_location = $(this).data("jump-to")
     if ( jump_location == "top" ) {
       jumpTo( $("body") )
