@@ -1,6 +1,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	background: #78BFEB;
+	/* background: #78BFEB; */
+	background-image: url("bg.png");
+	background-repeat: repeat;
 
 }
 
