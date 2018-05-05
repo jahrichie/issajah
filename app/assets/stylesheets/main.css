@@ -1,8 +1,39 @@
+#still-logo{
+    border-radius:50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+
+
+}
+#still-logo:hover,
+#still-logo.rotate-me-now
+{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+#still-logo{
+    border-radius:50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+
+
+}
+#still-logo:hover{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+}
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
-	/* background: #78BFEB; */
-	background-image: url("bg.png");
-	background-repeat: repeat;
+	background: #78BFEB;
+	/* background-image: url("bg.png");
+	background-repeat: repeat; */
 
 }
 

@@ -1,9 +1,11 @@
 $(function(){
 
   function jumpTo($el) {
-    var speed = 1000
+    var speed = 1000;
+    var offsetWPadding = $el.offset().top - $(".top-nav").innerHeight();
+
     $('html, body').animate({
-         scrollTop: $el.offset().top
+         scrollTop: offsetWPadding
      }, speed);
 
   }
@@ -38,5 +40,11 @@ $(function(){
   })
 
 
+  $("#still-logo").addClass("rotate-me-now")
+  setTimeout(
+    function()
+    {
+      $("#still-logo").removeClass("rotate-me-now")
+    }, 1000);
 
-});
+});//dom ready

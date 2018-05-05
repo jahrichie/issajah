@@ -22,9 +22,10 @@ img.spin-me { -webkit-animation: spin 4s infinite linear;}
 	padding-top: 25px;
 }
 
-#homepage .goodbye {
+.goodbye {
 	margin-top:45px;
 	font-size:5em;
+	min-height: 500px !important;
 }
 
 #homepage .site img {
@@ -93,6 +94,7 @@ span.cb-native-blurb {
 	width: 100%;
 	background: 	  #78BFEB;
 	display: none;
+	border-bottom: 1px solid #fff;
 }
 
 
