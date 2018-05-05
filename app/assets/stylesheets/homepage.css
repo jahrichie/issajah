@@ -1,6 +1,7 @@
 img.logo-face {
 	max-width: 100px;
 	margin:25px 0;
+	cursor: pointer;
 }
 
 img.spin-me { -webkit-animation: spin 4s infinite linear;}
@@ -16,8 +17,8 @@ img.spin-me { -webkit-animation: spin 4s infinite linear;}
 }
 
 #homepage .message {
-	max-width: 550px;
-	font-size: 13px;
+	/* max-width: 550px; */
+	font-size: 16px;
 	text-align: center;
 	padding-top: 25px;
 }
@@ -49,6 +50,7 @@ span.cb-native-blurb {
 	text-align: left;
 	margin-top:50px;
 	display: block;
+	font-weight: normal;
 }
 
 .fold-height {
@@ -93,7 +95,7 @@ span.cb-native-blurb {
 .top-nav {
 	width: 100%;
 	background: 	  #78BFEB;
-	display: none;
+	/* display: none; */
 	border-bottom: 1px solid #fff;
 }
 

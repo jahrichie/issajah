@@ -34,7 +34,7 @@ $(function(){
   });
 
   var waypoint = new Waypoint({
-    element: $(".nav-trigger"),
+    element: $("h1.name"),
     handler: function(direction) {
       if(direction == "down"){
         console.log('Scrolled to waypoint!', direction)
@@ -43,8 +43,6 @@ $(function(){
         console.log('Scrolled to waypoint!', direction)
         $(".top-nav").fadeOut()
       }
-
-
     }
   })
 
