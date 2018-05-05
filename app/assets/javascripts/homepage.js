@@ -7,8 +7,17 @@ $(function(){
     $('html, body').animate({
          scrollTop: offsetWPadding
      }, speed);
-
   }
+
+
+  $( "#still-logo" ).click(function() {
+    $("#still-logo").addClass("rotate-me-now")
+    setTimeout(
+      function()
+      {
+        $("#still-logo").removeClass("rotate-me-now")
+      }, 1000);
+  });
 
 
   $(".top-nav ul li a").click(function() {
