@@ -1,4 +1,5 @@
 $(function(){
+
   function jumpTo($el) {
     var speed = 1000
     $('html, body').animate({
@@ -18,9 +19,6 @@ $(function(){
     } else {
       jumpTo( $("#sillyprojects") )
     }
-
-
-
 
   });
 
